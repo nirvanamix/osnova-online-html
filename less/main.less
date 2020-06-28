@@ -1403,6 +1403,7 @@ footer{
 	z-index: 9999;
 	text-align: center;
 	display: none;
+	overflow-y: auto;
 	&.show{
 		display: block !important;
 	}
@@ -1423,6 +1424,7 @@ footer{
 		text-align: left;
 		vertical-align: middle;
 		position: relative;
+		border-radius: 0.4rem;
 	}
 	iframe{
 		width: 100%;
@@ -1470,6 +1472,9 @@ footer{
 	}
 	h2, .h2{
 		text-align: center;
+		&:before{
+			content: none;
+		}
 	}
 }
 .overflow-body{

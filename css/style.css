@@ -19638,6 +19638,7 @@ footer .login-menu-item {
   z-index: 9999;
   text-align: center;
   display: none;
+  overflow-y: auto;
 }
 .modal-window.show {
   display: block !important;
@@ -19659,6 +19660,7 @@ footer .login-menu-item {
   text-align: left;
   vertical-align: middle;
   position: relative;
+  border-radius: 0.4rem;
 }
 .modal-window iframe {
   width: 100%;
@@ -19712,6 +19714,10 @@ footer .login-menu-item {
 .modal-window h2,
 .modal-window .h2 {
   text-align: center;
+}
+.modal-window h2:before,
+.modal-window .h2:before {
+  content: none;
 }
 .overflow-body {
   overflow: hidden;
