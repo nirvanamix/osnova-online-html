@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
 				$('.phone-block .block-social').slideToggle(100);
 			});
 			jQuery('body').click( function(event){
-				if(jQuery(event.target).closest(".phone-block").length ) 
+				if(jQuery(event.target).closest(".phone-block, a[data-fancybox]").length ) 
 				return;
 					$('.phone-block .block-social').slideUp(100);
 				event.stopPropagation();

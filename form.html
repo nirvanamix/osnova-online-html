@@ -12,6 +12,24 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
+	<a href="#" data-modal="form-one-click" data-script-form="be174cb6148ceb4cea4f519834ce12a5cde4f544, 648, 27013d56ac9d70d074e7f827a58ac686182ee06a, 135001">
+											Купить в 1 клик
+										</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<div class="wrapper">
 		<header>
 			<div class="container-fluid">
@@ -181,11 +199,11 @@
 						<p>
 							Получите новую профессию арт-терапевта и станьте более эффективным в работе с клиентами, применяя творчество и уникальные техники психологической помощи!
 						</p>
-						<div class="link-two">
-							<a href="#" data-modal="modal-form">
-								Записаться
-							</a>
-						</div>
+						<div class="link-two gradient">
+					<a href="#" data-modal="modal-form-widget" data-script-form="be174cb6148ceb4cea4f519834ce12a5cde4f544, 648, 27013d56ac9d70d074e7f827a58ac686182ee06a, 135001">
+						Записаться 2
+					</a>
+				</div>
 					</div>
 				</div>
 				<h2>
@@ -956,7 +974,7 @@
 					<div class="item">
 						<div class="img">
 							<img src="img/simple/img-1.jpg" alt="">
-							<iframe src="#" data-src="https://player.vimeo.com/video/298116340"></iframe>
+							<iframe src="#" title="https://player.vimeo.com/video/298116340"></iframe>
 						</div>
 						<div class="title">
 							Анна Куриленко
@@ -1284,21 +1302,108 @@
 	<div class="modal-window video-window" data-modal="modal-video">
 		<div class="window">
 			<div class="close-win"></div>
-			<!-- <iframe src="img/logo.png" data-src="https://player.vimeo.com/video/298116340"></iframe> -->
+			<iframe src="img/logo.png" data-src="https://player.vimeo.com/video/298116340"></iframe>
 		</div>
 	</div>
-	<!-- script -->
-		<script src="js/jquery/jquery-3.4.1.min.js"></script>
+
+
+
+
+
+	
+	<div class="modal-window" data-modal="modal-form-widget">
+		<div class="window">
+			<div class="close-win"></div>
+			<h2>
+				Title
+			</h2>
+			<div class="block-form-script"></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+<!-- script -->
+		<script src="https://vtkosnova.com/wp-content/themes/vtkosnova_theme/assets/t11-art-online/js/jquery/jquery-3.4.1.min.js"></script>
 		<!-- functions -->
 		<!-- slide -->
-		<script src="js/plugins/slide.js"></script>
-		<script src="js/plugins/slide-include.js"></script>
+		<script src="https://vtkosnova.com/wp-content/themes/vtkosnova_theme/assets/t11-art-online/js/plugins/slide.js"></script>
+		<script src="https://vtkosnova.com/wp-content/themes/vtkosnova_theme/assets/t11-art-online/js/plugins/slide-include.js"></script>
 		<!-- function -->
-		<script src="js/function.js"></script>
+		<script src="https://vtkosnova.com/wp-content/themes/vtkosnova_theme/assets/t11-art-online/js/function.js"></script>
 		<!-- fancybox -->
-		<script src="js/plugins/jquery.fancybox.js"></script>
+		<script src="https://vtkosnova.com/wp-content/themes/vtkosnova_theme/assets/t11-art-online/js/plugins/jquery.fancybox.js"></script>
 		<!-- webp -->
-		<script src="js/plugins/webp.js"></script>
+		<script src="https://vtkosnova.com/wp-content/themes/vtkosnova_theme/assets/t11-art-online/js/plugins/webp.js"></script>
+		<!-- fomr-script -->
+		<script src="https://vtkosnova.com/wp-content/themes/vtkosnova_theme/assets/global/js/fomr-script.js"></script>
+		<script>
+			jQuery(document).ready(function($) {
+				$('a[data-script-form]').click(function(event) {
+    	
+			    	$('.modal-form .h2').text('');
+
+			    	var clicked_product_title = $(this).data('pack-title');
+
+			    	$('.modal-form .h2').text(clicked_product_title);
+
+			    });
+			});	
+		</script>
+	<!-- script -->
+	<!-- script -->
+	        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=678910589308333&version=v2.3";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>	
+    <link rel='stylesheet' id='dashicons-css'  href='https://vtkosnova.com/wp-includes/css/dashicons.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='thickbox-css'  href='https://vtkosnova.com/wp-includes/js/thickbox/thickbox.css?ver=5.4.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://vtkosnova.com/wp-content/plugins/nova-poshta-ttn-pro//assets/select3.min.js?ver=1.7.48'></script>
+<script type='text/javascript' src='https://vtkosnova.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"\u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440 \u043a\u043e\u0440\u0437\u0438\u043d\u044b","cart_url":"https:\/\/vtkosnova.com\/korzina\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vtkosnova.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=4.2.2'></script>
+<script type='text/javascript' src='https://vtkosnova.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vtkosnova.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=4.2.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_9556d40f4125b47fccba06186d978942","fragment_name":"wc_fragments_9556d40f4125b47fccba06186d978942","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vtkosnova.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=4.2.2'></script>
+<script type='text/javascript' src='https://vtkosnova.com/wp-includes/js/wp-embed.min.js?ver=5.4.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thickboxL10n = {"next":"\u0414\u0430\u043b\u0435\u0435 \u2192","prev":"\u2190 \u041d\u0430\u0437\u0430\u0434","image":"\u0418\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435","of":"\u0438\u0437","close":"\u0417\u0430\u043a\u0440\u044b\u0442\u044c","noiframes":"\u042d\u0442\u0430 \u0444\u0443\u043d\u043a\u0446\u0438\u044f \u0442\u0440\u0435\u0431\u0443\u0435\u0442 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0438 \u043f\u043b\u0430\u0432\u0430\u044e\u0449\u0438\u0445 \u0444\u0440\u0435\u0439\u043c\u043e\u0432. \u0423 \u0432\u0430\u0441 \u043e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u044b \u0442\u0435\u0433\u0438 iframe, \u043b\u0438\u0431\u043e \u0432\u0430\u0448 \u0431\u0440\u0430\u0443\u0437\u0435\u0440 \u0438\u0445 \u043d\u0435 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442.","loadingAnimation":"https:\/\/vtkosnova.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vtkosnova.com/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105'></script>
+	<script src="//code.jivosite.com/widget/G37PM4OuRF" async></script>
+
+
+
+<script src="https://callback3.onlinepbx.ru/?cb-id=564e411c-064f-40dc-b2d9-90d80f8405b0"></script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN8G6B9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- script -->
 </body>
 </html>

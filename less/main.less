@@ -1,9 +1,7 @@
 @font-face {
 	font-family: 'PT Mono';
 	src:
-	url('../fonts/PTMono/bold/PTMono-Bold.woff') format('woff'),
-	url('../fonts/PTMono/bold/PTMono-Bold.ttf')  format('truetype'),
-	url('../fonts/PTMono/bold/PTMono-Bold.svg#PTMono-Bold') format('svg');
+	url('../fonts/PTMono/bold/PTMono-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -426,7 +424,7 @@ ul.ul-knowledge-base{
 		text-transform: none;
 	}
 }
-ul.ul-disk{
+ul.ul-disk, .acardion ul{
 	font-size: 1.6em;
 	line-height: 1.5em;
 	padding: 0 2.5rem;
@@ -546,6 +544,8 @@ ul.ul-disk{
 	text-align: center;
 	user-select: none;
 	span.active{
+		animation: none;
+		transform: scale(1) !important;
 		mark{
 			&:first-child{
 				display: none;
@@ -562,6 +562,12 @@ ul.ul-disk{
 		font-family: @fonts-pt-moto;
 		font-weight: 700;
 		cursor: pointer;
+		transition: all 0.3s;
+		animation: pulse 2s linear infinite alternate;
+		&:hover{
+			color: #DC6D58;
+			transform: scale(1.05);
+		}
 	}
 	mark{
 		&:first-child{
@@ -683,11 +689,13 @@ ul.ul-disk{
 	}
 	.top{
 		font-size: 2.8em;
+		line-height: 1.3em;
 		color: #6E91A5;
 		font-weight: 700;
 		font-family: @fonts-pt-moto;
 		position: relative;
 		cursor: pointer;
+		padding-right: 4rem;
 		&.active{
 			&:before{
 				transform: rotate(0);
@@ -699,7 +707,7 @@ ul.ul-disk{
 			height: 1.7rem;
 			display: block;
 			position: absolute;
-			top: 0.85rem;
+			top: 1.05rem;
 			right: 0.2rem;
 			background: url(../img/vector.svg) no-repeat;
 			background-size: contain;
@@ -713,7 +721,7 @@ ul.ul-disk{
 			margin-bottom: 0;
 		}
 	}
-	ul.ul-disk{
+	ul.ul-disk, .bottom ul{
 		padding: 0;
 		font-size: 1.8em;
 		font-family: @fonts-pt-moto;
@@ -1046,9 +1054,6 @@ ul.ul-disk{
 		li{
 			margin-bottom: 1.5rem;
 		}
-	}
-	.link-two{
-		display: none;
 	}
 }
 .mobile-detals{
